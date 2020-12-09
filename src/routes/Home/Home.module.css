@@ -1,0 +1,77 @@
+.Heading {
+    color: black;
+    font-family: Oregano;
+    font-size: 72px;
+}
+
+.PageBanner {
+    display: flex;
+    margin-top: 50px;
+}
+
+.PageBanner__Text p {
+    font-family: Roboto;
+    font-size: 36px;
+    color: #827676;
+}
+
+.PageBanner__Image {
+    width: 100vw;
+    height: auto;
+}
+
+.PageBanner__Btn{
+    background: #f33d15;
+    color: white;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 36px;
+    border-radius: 10px;
+    border: none;
+}
+
+.PageBanner__Btn:hover {
+    background: #9e3a24;
+}
+
+.PageBanner__Btn:focus {
+    background: #f33d15;
+}
+
+.PageBanner .PageBanner__Text .PageBanner__Btn:focus {
+    background: #f33d15;
+}
+
+.Numbers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.Numbers h1 {
+    font-size: 48px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.Numbers p {
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #827676;
+}
+
+@media screen and (max-width:1024px) {
+    .PageBanner__Text {
+        order: 2;
+    }
+
+    .PageBanner__Image {
+        width: 70vw;
+        order: 1;
+    }
+
+    .PageBanner {
+        flex-direction: column;
+    }
+}
