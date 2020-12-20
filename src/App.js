@@ -17,10 +17,23 @@ const App = () => {
           </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav" className="Collapsible">
           <Nav className="ml-auto Menu">
+            
+            {/* <Nav.Link>Home</Nav.Link>
+            <Nav.Link>Order Now</Nav.Link>
+            <Nav.Link>About us</Nav.Link>
+            <Nav.Link>Contact us</Nav.Link> */}
+
+            <Link to="/" className="Menu__Item">Home</Link>
+            <Link to="/foods/list" className="Menu__Item">Order Now</Link>
+            <Link to="/" className="Menu__Item">About us</Link>
+            <Link to="/" className="Menu__Item">Contact us</Link>
+
+
+            {/* 
             <Nav.Link> <Link to="/" className="Menu__Item">Home</Link></Nav.Link>
             <Nav.Link> <Link to="/foods/list" className="Menu__Item">Order Now</Link></Nav.Link>
             <Nav.Link> <Link to="/" className="Menu__Item">About us</Link></Nav.Link>
-            <Nav.Link> <Link to="/" className="Menu__Item">Contact us</Link></Nav.Link>
+            <Nav.Link> <Link to="/" className="Menu__Item">Contact us</Link></Nav.Link>  */}
           </Nav>
         </Navbar.Collapse>
         <CartFill color="#f33d15" size={24}/>
