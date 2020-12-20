@@ -99,17 +99,13 @@ const Home = () => {
             if (prevEndSlide + itemsPerSlide <= foods.length) {
                 return prevEndSlide + itemsPerSlide
             } else if (prevEndSlide + itemsPerSlide > foods.length) {
-              
-                return itemsPerSlide + (prevEndSlide + itemsPerSlide - foods.length )
+                return foods.length
             }
 
             return prevEndSlide - itemsPerSlide
         })
     
     }
-
-    console.log(startSlide)
-    console.log(endSlide)
 
     return (
         <Container>
