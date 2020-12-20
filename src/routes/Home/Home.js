@@ -44,7 +44,7 @@ const Home = () => {
         }
     ]
 
-    const itemsPerSlide = 5
+    const itemsPerSlide = 3
 
     const [startSlide, setStartSlide] = useState(0)
     const [endSlide, setEndSlide] = useState(itemsPerSlide)
